@@ -4,7 +4,6 @@ AC_INIT([wbar], [2.3.4])
 AM_INIT_AUTOMAKE([ filename-length-max=256 tar-ustar ])
 
 AM_CONFIG_HEADER(config.h)
-AC_CONFIG_MACRO_DIR([m4])
 
 AC_PROG_CXX
 AC_PROG_INSTALL
@@ -52,14 +51,14 @@ AC_DEFINE_UNQUOTED(PIXMAPDIR, "$PIXMAPDIR" , [ The pixmaps dir ])
 AC_SUBST(GLADE_PACKAGE_DIR, "$SHARE_DATADIR/AC_PACKAGE_NAME/glade")
 AC_DEFINE_UNQUOTED(GLADE_PACKAGE_DIR, "$GLADE_PACKAGE_DIR" , [ The glade package dir ])
 
-AC_SUBST(GLADE_PACKAGE_NAME, "$GLADE_PACKAGE_DIR/AC_PACKAGE_NAME.glade")
+AC_SUBST(GLADE_PACKAGE_NAME, "$GLADE_PACKAGE_DIR/AC_PACKAGE_NAME.ui")
 AC_DEFINE_UNQUOTED(GLADE_PACKAGE_NAME, "$GLADE_PACKAGE_NAME" , [ The glade package name ])
 
 AC_SUBST(DEFAULT_ARGV, "--bpress --above-desk --vbar --pos right --isize 64 --idist 5 --nanim 4 --falfa 65")
 AC_DEFINE_UNQUOTED(DEFAULT_ARGV, "$DEFAULT_ARGV" , [ The default argv ])
 
 AC_PROG_INTLTOOL()
-AM_GLIB_GNU_GETTEXT
+AM_GNU_GETTEXT_VERSION([0.19])
 PKG_PROG_PKG_CONFIG
 
 PKG_CHECK_MODULES(modules, [imlib2 x11 xrandr])
@@ -70,14 +69,13 @@ AC_ARG_ENABLE(wbar-config, AS_HELP_STRING([--disable-wbar-config],
 	[build without the GTK+ configuration interface]),[use_wbar_config=$enableval],
 	[use_wbar_config=yes])
 if test "$use_wbar_config" = "yes"; then
-	PKG_CHECK_MODULES(gui_modules, [gtk+-2.0 libglade-2.0])
+	PKG_CHECK_MODULES(gui_modules, [gtk+-3.0 gladeui-2.0])
 	AC_SUBST(gui_modules_CFLAGS)
 	AC_SUBST(gui_modules_LIBS)
 fi
 
 AM_CONDITIONAL([WBAR_CONFIG],[test "$use_wbar_config" = "yes"])
 
-AC_SUBST(PIDOF_BIN, "pidof ")
 AC_PATH_PROG(PIDOF_BIN, pidof, pgrep)
 AC_DEFINE_UNQUOTED(PIDOF_BIN, "$PIDOF_BIN ", [ program to retreive wbar pid ])
 

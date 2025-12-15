@@ -1,3 +1,14 @@
+wbar (2.4.0)
+  * Absorb Debian patches:
+    - gcc-6-literal-suffix.patch
+    - remove-GNOME2_DIR.patch
+    - no-AC_SUBST-pidof.patch
+    - autoconf-2.70.patch
+    - configure.ac.patch
+  * Transit the UI building from GLADE to GtkBuilder
+    - This is done by gtk-builder-ui.patch posted at Bug #1090851
+
+ -- hmatrjp <Takeshi.Ken.Hamasaki+hmatrjp@gmail.com> (15-12-2025)
 wbar (2.3.1)
 
   * Apply suggestions from Markus to ease Debian packaging.
