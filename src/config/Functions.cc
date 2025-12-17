@@ -1341,7 +1341,7 @@ void on_select_command() {
 
   GtkWidget *file = gtk_file_chooser_dialog_new(
       _("Open exec file"), GTK_WINDOW(dialog), GTK_FILE_CHOOSER_ACTION_OPEN,
-      GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, GTK_STOCK_OPEN,
+      _("_Cancel"), GTK_RESPONSE_CANCEL, _("_Open"),
       GTK_RESPONSE_ACCEPT, (char *)NULL);
 
   GtkWidget *command = (GtkWidget *)gtk_builder_get_object(xml, "entry_command");
@@ -1362,7 +1362,7 @@ void on_select_icon() {
 
   GtkWidget *file = gtk_file_chooser_dialog_new(
       _("Open image file"), GTK_WINDOW(dialog), GTK_FILE_CHOOSER_ACTION_OPEN,
-      GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, GTK_STOCK_OPEN,
+      _("_Cancel"), GTK_RESPONSE_CANCEL, _("_Open"),
       GTK_RESPONSE_ACCEPT, (char *)NULL);
 
   GtkWidget *icon = (GtkWidget *)gtk_builder_get_object(xml, "entry_icon");
@@ -1389,7 +1389,7 @@ void on_select_fontname() {
 
   GtkWidget *file = gtk_file_chooser_dialog_new(
       _("Open font file"), GTK_WINDOW(dialog), GTK_FILE_CHOOSER_ACTION_OPEN,
-      GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, GTK_STOCK_OPEN,
+      _("_Cancel"), GTK_RESPONSE_CANCEL, _("_Open"),
       GTK_RESPONSE_ACCEPT, (char *)NULL);
 
   GtkWidget *font = (GtkWidget *)gtk_builder_get_object(xml, "entry_font_name");
@@ -1417,7 +1417,7 @@ void on_select_imagename() {
 
   GtkWidget *file = gtk_file_chooser_dialog_new(
       _("Open image file"), GTK_WINDOW(dialog), GTK_FILE_CHOOSER_ACTION_OPEN,
-      GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, GTK_STOCK_OPEN,
+      _("_Cancel"), GTK_RESPONSE_CANCEL, _("_Open"),
       GTK_RESPONSE_ACCEPT, (char *)NULL);
 
   GtkWidget *icon = (GtkWidget *)gtk_builder_get_object(xml, "entry_image_name");
