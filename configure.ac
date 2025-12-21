@@ -69,7 +69,7 @@ AC_ARG_ENABLE(wbar-config, AS_HELP_STRING([--disable-wbar-config],
 	[build without the GTK+ configuration interface]),[use_wbar_config=$enableval],
 	[use_wbar_config=yes])
 if test "$use_wbar_config" = "yes"; then
-	PKG_CHECK_MODULES(gui_modules, [gtk+-3.0 gladeui-2.0])
+	PKG_CHECK_MODULES(gui_modules, [gtk+-3.0])
 	AC_SUBST(gui_modules_CFLAGS)
 	AC_SUBST(gui_modules_LIBS)
 fi
