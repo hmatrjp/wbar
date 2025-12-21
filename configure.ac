@@ -58,6 +58,7 @@ AC_SUBST(DEFAULT_ARGV, "--bpress --above-desk --vbar --pos right --isize 64 --id
 AC_DEFINE_UNQUOTED(DEFAULT_ARGV, "$DEFAULT_ARGV" , [ The default argv ])
 
 AC_PROG_INTLTOOL()
+AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION([0.19])
 PKG_PROG_PKG_CONFIG
 
