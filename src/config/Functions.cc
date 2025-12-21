@@ -515,14 +515,14 @@ void set_config_states(std::string command) {
     std::string salpha = scolor.substr(2, 2);
     scolor = "#" + scolor.substr(4, 6);
 
-    GdkColor rgb;
-    GtkWidget * color = (GtkWidget *)gtk_builder_get_object(xml, "colorbutton_fc");
+    GdkRGBA rgba;
+    GtkWidget *color = (GtkWidget *)gtk_builder_get_object(xml, "colorbutton_fc");
 
-    gdk_color_parse(scolor.c_str(), &rgb);
-    gtk_color_button_set_color(GTK_COLOR_BUTTON(color), &rgb);
-    gtk_color_button_set_use_alpha(GTK_COLOR_BUTTON(color), TRUE);
-    gtk_color_button_set_alpha(GTK_COLOR_BUTTON(color),
-                               256 * (strtol(salpha.c_str(), NULL, 16) + 0.5));
+    gdk_rgba_parse(&rgba, scolor.c_str());
+    rgba.alpha = (float) strtol(salpha.c_str(), NULL, 16) / 0xff;
+
+    gtk_color_chooser_set_rgba(GTK_COLOR_CHOOSER(color), &rgba);
+    gtk_color_chooser_set_use_alpha(GTK_COLOR_CHOOSER(color), TRUE);
   }
 
   if (argc > 0) {
@@ -1150,13 +1150,15 @@ std::string getCommand() {
 
   if (gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(checkbutton))) {
     GtkWidget *color = (GtkWidget *)gtk_builder_get_object(xml, "colorbutton_fc");
-    GdkColor rgb;
+    GdkRGBA rgba;
     gchar text[16];
 
-    gtk_color_button_get_color(GTK_COLOR_BUTTON(color), &rgb);
-    int alpha = gtk_color_button_get_alpha(GTK_COLOR_BUTTON(color));
-    g_snprintf(text, sizeof(text), "0x%02x%02x%02x%02x", alpha >> 8,
-               rgb.red >> 8, rgb.green >> 8, rgb.blue >> 8);
+    gtk_color_chooser_get_rgba(GTK_COLOR_CHOOSER(color), &rgba);
+    g_snprintf(text, sizeof(text), "0x%02x%02x%02x%02x", 
+               (unsigned int) (rgba.alpha * 0xff),
+               (unsigned int) (rgba.red   * 0xff),
+               (unsigned int) (rgba.green * 0xff),
+               (unsigned int) (rgba.blue  * 0xff)  );
 
     command += " --fc ";
     command += text;
@@ -1328,8 +1330,7 @@ gboolean clickTreeView(GtkWidget *widget, GdkEventButton *event,
                        gpointer data) {
   if (event->button == 3) {
     GtkWidget *menu = static_cast<GtkWidget *>(data);
-    gtk_menu_popup(GTK_MENU(menu), NULL, NULL, NULL, NULL, event->button,
-                   event->time);
+    gtk_menu_popup_at_pointer(GTK_MENU(menu), NULL );
     return true;
   }
 
