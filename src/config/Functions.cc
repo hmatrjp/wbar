@@ -15,6 +15,7 @@
 static const gchar *authors[] = { "Yadickson Soto <yadickson@gmail.com>",
                                   "Rodolfo Granata <warlock.cc@gmail.com>",
                                   "Ivan Fitenko <ivan.fitenko@eltrino.com>",
+                                  "Takeshi Hamasaki <Takeshi.Ken.Hamasaki+hmatrjp@gmail.com>",
                                   NULL };
 
 static const gchar *documenters[] = { "Yadickson Soto <yadickson@gmail.com>",
@@ -1459,7 +1460,7 @@ void show_about() {
       gtk_widget_get_tooltip_window(settings), "title", _("About"), "icon",
       pixbuf, "program-name", _("wbar config"), "version", VERSION, "copyright",
       _("License GPL - 2010"), "comments", _("A light and fast launch bar."),
-      "website", "http://code.google.com/p/wbar/", "website-label",
-      _("wbar project website"), "authors", authors, "documenters", documenters,
+      "website", "https://github.com/hmatrjp/wbar/", "website-label",
+      _("wbar repository (adopted for overhaul)"), "authors", authors, "documenters", documenters,
       "translator-credits", translater, "logo", pixbuf, (char *)NULL);
 }
