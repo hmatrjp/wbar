@@ -80,7 +80,7 @@ void view_settings() {
 
   set_default_icon();
 
-  GtkWidget * settings = (GtkWidget *)gtk_builder_get_object (xml, "dialog_settings");
+  GtkWidget * settings = (GtkWidget *)gtk_builder_get_object(xml, "dialog_settings");
   gtk_widget_show(GTK_WIDGET(settings));
   gtk_widget_show_all(settings);
 
@@ -99,7 +99,7 @@ void set_default_icon() {
 }
 
 void set_treeview() {
-  GtkWidget * treeview = (GtkWidget *)gtk_builder_get_object (xml, "treeview_app");
+  GtkWidget * treeview = (GtkWidget *)gtk_builder_get_object(xml, "treeview_app");
   GtkListStore *list_store =
       gtk_list_store_new(TREE_COLUMNS, GDK_TYPE_PIXBUF, G_TYPE_STRING,
                          G_TYPE_STRING, G_TYPE_STRING);
@@ -130,7 +130,7 @@ void set_comboboxs() {
   GtkTreeIter iter;
   GtkCellRenderer *cell;
 
-  combo = (GtkWidget *)gtk_builder_get_object (xml, "combobox_pos");
+  combo = (GtkWidget *)gtk_builder_get_object(xml, "combobox_pos");
   list_store = gtk_list_store_new(COMBO_COLUMNS, G_TYPE_STRING, G_TYPE_INT);
   gtk_combo_box_set_model(GTK_COMBO_BOX(combo), GTK_TREE_MODEL(list_store));
 
@@ -177,7 +177,7 @@ void set_comboboxs() {
 
   gtk_combo_box_set_active(GTK_COMBO_BOX(combo), POS_RIGHT);
 
-  combo = (GtkWidget *)gtk_builder_get_object (xml, "combobox_filter");
+  combo = (GtkWidget *)gtk_builder_get_object(xml, "combobox_filter");
   list_store = gtk_list_store_new(COMBO_COLUMNS, G_TYPE_STRING, G_TYPE_INT);
   gtk_combo_box_set_model(GTK_COMBO_BOX(combo), GTK_TREE_MODEL(list_store));
 
@@ -234,13 +234,13 @@ void set_config() {
 
     font = util.join(f, "/");
 
-    GtkWidget * spinbutton_font_size = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_font_size");
+    GtkWidget * spinbutton_font_size = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_font_size");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton_font_size), size);
 
-    GtkWidget * entry_font_name = (GtkWidget *)gtk_builder_get_object (xml, "entry_font_name");
+    GtkWidget * entry_font_name = (GtkWidget *)gtk_builder_get_object(xml, "entry_font_name");
     gtk_entry_set_text(GTK_ENTRY(entry_font_name), font.c_str());
 
-    GtkWidget * entry_image_name = (GtkWidget *)gtk_builder_get_object (xml, "entry_image_name");
+    GtkWidget * entry_image_name = (GtkWidget *)gtk_builder_get_object(xml, "entry_image_name");
     gtk_entry_set_text(GTK_ENTRY(entry_image_name), app->getIconName().c_str());
 
     set_config_states(app->getCommand());
@@ -329,29 +329,29 @@ void set_config_states(std::string command) {
   OptParser opt(argc, argv);
 
   if (opt.isSet(OptParser::BPRESS)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_bpress");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_bpress");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
   }
 
   if (opt.isSet(OptParser::ABOVE_DESK)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_above_desk");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_above_desk");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
   }
 
   if (opt.isSet(OptParser::VBAR)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_vbar");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_vbar");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
   }
 
   if (opt.isSet(OptParser::NOFONT)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_nofont");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_nofont");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
   }
 
   if (opt.isSet(OptParser::POS)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_pos");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_pos");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    GtkWidget * combo = (GtkWidget *)gtk_builder_get_object (xml, "combobox_pos");
+    GtkWidget * combo = (GtkWidget *)gtk_builder_get_object(xml, "combobox_pos");
 
     std::string pos = opt.getArg(OptParser::POS);
 
@@ -378,117 +378,117 @@ void set_config_states(std::string command) {
   }
 
   if (opt.isSet(OptParser::GROW)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_grow");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_grow");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
   }
 
   if (opt.isSet(OptParser::OFFSET)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_offset");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_offset");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_offset");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_offset");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atoi(opt.getArg(OptParser::OFFSET).c_str()));
   }
 
   if (opt.isSet(OptParser::NORELOAD)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_noreload");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_noreload");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
   }
 
   if (opt.isSet(OptParser::TASKBAR)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_taskbar");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_taskbar");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
   }
 
   if (opt.isSet(OptParser::USER_ICONS)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_user_icons");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_user_icons");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
   }
 
   if (opt.isSet(OptParser::RSIZE)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_rsize");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_rsize");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_rsize");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_rsize");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atoi(opt.getArg(OptParser::RSIZE).c_str()));
   }
 
   if (opt.isSet(OptParser::RALPHA)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_ralpha");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_ralpha");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_ralpha");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_ralpha");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atoi(opt.getArg(OptParser::RALPHA).c_str()));
   }
 
   if (opt.isSet(OptParser::ISIZE)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_isize");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_isize");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_isize");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_isize");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atoi(opt.getArg(OptParser::ISIZE).c_str()));
   }
 
   if (opt.isSet(OptParser::IDIST)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_idist");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_idist");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_idist");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_idist");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atoi(opt.getArg(OptParser::IDIST).c_str()));
   }
 
   if (opt.isSet(OptParser::NANIM)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_nanim");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_nanim");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_nanim");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_nanim");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atoi(opt.getArg(OptParser::NANIM).c_str()));
   }
 
   if (opt.isSet(OptParser::ZOOMF)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_zoomf");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_zoomf");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_zoomf");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_zoomf");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atof(opt.getArg(OptParser::ZOOMF).c_str()));
   }
 
   if (opt.isSet(OptParser::JUMPF)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_jumpf");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_jumpf");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_jumpf");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_jumpf");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atof(opt.getArg(OptParser::JUMPF).c_str()));
   }
 
   if (opt.isSet(OptParser::DBLCLK)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_dblclk");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_dblclk");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_dblclk");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_dblclk");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atoi(opt.getArg(OptParser::DBLCLK).c_str()));
   }
 
   if (opt.isSet(OptParser::BALFA)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_balfa");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_balfa");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_balfa");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_balfa");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atoi(opt.getArg(OptParser::BALFA).c_str()));
   }
 
   if (opt.isSet(OptParser::FALFA)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_falfa");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_falfa");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    spinbutton = (GtkWidget *)gtk_builder_get_object (xml, "spinbutton_falfa");
+    spinbutton = (GtkWidget *)gtk_builder_get_object(xml, "spinbutton_falfa");
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(spinbutton),
                               atoi(opt.getArg(OptParser::FALFA).c_str()));
   }
 
   if (opt.isSet(OptParser::FILTER)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_filter");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_filter");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
-    GtkWidget * combo = (GtkWidget *)gtk_builder_get_object (xml, "combobox_filter");
+    GtkWidget * combo = (GtkWidget *)gtk_builder_get_object(xml, "combobox_filter");
 
     std::string filter = opt.getArg(OptParser::FILTER);
     int f;
@@ -508,7 +508,7 @@ void set_config_states(std::string command) {
   }
 
   if (opt.isSet(OptParser::FC)) {
-    checkbutton = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_fc");
+    checkbutton = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_fc");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(checkbutton), true);
 
     std::string scolor = opt.getArg(OptParser::FC);
@@ -516,7 +516,7 @@ void set_config_states(std::string command) {
     scolor = "#" + scolor.substr(4, 6);
 
     GdkColor rgb;
-    GtkWidget * color = (GtkWidget *)gtk_builder_get_object (xml, "colorbutton_fc");
+    GtkWidget * color = (GtkWidget *)gtk_builder_get_object(xml, "colorbutton_fc");
 
     gdk_color_parse(scolor.c_str(), &rgb);
     gtk_color_button_set_color(GTK_COLOR_BUTTON(color), &rgb);
@@ -617,8 +617,8 @@ void set_signals() {
   GtkWidget *check;
   GtkWidget *widget;
 
-  check = (GtkWidget *)gtk_builder_get_object (xml, "checkbutton_pos");
-  widget = (GtkWidget *)gtk_builder_get_object (xml, "combobox_pos");
+  check = (GtkWidget *)gtk_builder_get_object(xml, "checkbutton_pos");
+  widget = (GtkWidget *)gtk_builder_get_object(xml, "combobox_pos");
   g_signal_connect(G_OBJECT(check), "toggled", G_CALLBACK(checkbutton_toggled),
                    widget);
 
