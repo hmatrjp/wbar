@@ -94,18 +94,3 @@ src/Makefile])
 AC_OUTPUT
 
 
-if test -d po \
-   &&  test -e po/Makefile ; then
-   echo "======================================="
-   echo ""
-   echo "Execute make update-po"
-   echo ""
-   cd po
-   make update-po | perl -ne 'print if /:$/'
-   echo ""
-   for file in $(ls *.po); do \
-       sed -i '/^\"POT-Creation-Date:.*\\n.*$/d' $file
-   done
-   cd ..
-   echo "======================================="
-fi
