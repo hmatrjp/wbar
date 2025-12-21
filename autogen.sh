@@ -144,7 +144,7 @@ do
   fi
 done
 
-conf_flags="--prefix /usr --exec_prefix /usr --sysconfdir=/etc --enable-maintainer-mode"
+conf_flags="--prefix /usr/local --exec_prefix /usr/local --sysconfdir=/etc --enable-maintainer-mode"
 
 if test x$NOCONFIGURE = x; then
   echo Running $srcdir/configure $conf_flags "$@" ...
