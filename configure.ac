@@ -1,13 +1,12 @@
 dnl make yadickson soto
 
-AC_INIT([wbar], [2.3.4])
+AC_INIT([wbar],[2.3.4])
 AM_INIT_AUTOMAKE([ filename-length-max=256 tar-ustar subdir-objects ])
 
-AM_CONFIG_HEADER(config.h)
+AC_CONFIG_HEADERS(config.h)
 
 AC_PROG_CXX
 AC_PROG_INSTALL
-AC_HEADER_STDC
 
 
 eval "prefix=$prefix"
@@ -57,7 +56,7 @@ AC_DEFINE_UNQUOTED(GLADE_PACKAGE_NAME, "$GLADE_PACKAGE_NAME" , [ The glade packa
 AC_SUBST(DEFAULT_ARGV, "--bpress --above-desk --vbar --pos right --isize 64 --idist 5 --nanim 4 --falfa 65")
 AC_DEFINE_UNQUOTED(DEFAULT_ARGV, "$DEFAULT_ARGV" , [ The default argv ])
 
-AC_PROG_INTLTOOL()
+IT_PROG_INTLTOOL()
 AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION([0.19])
 PKG_PROG_PKG_CONFIG
