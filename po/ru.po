@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wbar ru\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: https://github.com/hmatrjp/wbar/issues\n"
+"POT-Creation-Date: 2025-12-28 19:57+0900\n"
 "PO-Revision-Date: 2011-05-06 11:38-0400\n"
 "Last-Translator: Alexander Vinnikov <radix.vinni@gmail.com>\n"
 "Language-Team: RU <radix.vinni@gmail.com>\n"
@@ -14,178 +15,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: ../share/wbar.glade.h:1 ../src/config/Functions.cc:1346
-#: ../src/config/Functions.cc:1367 ../src/config/Functions.cc:1394
-#: ../src/config/Functions.cc:1422
-msgid "_Cancel"
-msgstr "_Отмена"
-
-#: ../share/wbar.glade.h:2
-msgid "_Accept"
-msgstr "_Ок"
-
-#: ../share/wbar.glade.h:3
-msgid "<b>Title</b>"
-msgstr "<b>Заголовок</b>"
-
-#: ../share/wbar.glade.h:4
-msgid "<b>Command</b>"
-msgstr "<b>Команда</b>"
-
-#: ../share/wbar.glade.h:5
-msgid "<b>Icon</b>"
-msgstr "<b>Иконка</b>"
-
-#: ../share/wbar.glade.h:6
-msgid "Settings"
-msgstr "Параметры"
-
-#: ../share/wbar.glade.h:7
-msgid "_About"
-msgstr "_О программе"
-
-#: ../share/wbar.glade.h:8
-msgid "_Close"
-msgstr "_Закрыть"
-
-#: ../share/wbar.glade.h:9
-msgid "_Reload"
-msgstr "_Применить"
-
-#: ../share/wbar.glade.h:10 ../src/config/Functions.cc:772
-msgid "New"
-msgstr "Добавить"
-
-#: ../share/wbar.glade.h:11 ../src/config/Functions.cc:808
-msgid "Edit"
-msgstr "Изменить"
-
-#: ../share/wbar.glade.h:12
-msgid "Delete"
-msgstr "Удалить"
-
-#: ../share/wbar.glade.h:13
-msgid "Up"
-msgstr "Поднять"
-
-#: ../share/wbar.glade.h:14
-msgid "Down"
-msgstr "Опустить"
-
-#: ../share/wbar.glade.h:15
-msgid "Icons"
-msgstr "Иконки"
-
-#: ../share/wbar.glade.h:16
-msgid "Size:"
-msgstr "Размер:"
-
-#: ../share/wbar.glade.h:17
-msgid "Font:"
-msgstr "Шрифт:"
-
-#: ../share/wbar.glade.h:18
-msgid "Bar image:"
-msgstr "Фон панельки"
-
-#: ../share/wbar.glade.h:19
-msgid "Icon gets pressed"
-msgstr "Иконка просидает при нажатии"
-
-#: ../share/wbar.glade.h:20
-msgid "Run above the desktop"
-msgstr "Поместить над рабочим столом"
-
-#: ../share/wbar.glade.h:21
-msgid "Vertical bar"
-msgstr "Расположить иконки вертикально"
-
-#: ../share/wbar.glade.h:22
-msgid "Disable font rendering"
-msgstr "Не отображать заголовки иконок"
-
-#: ../share/wbar.glade.h:23
-msgid "Position screen"
-msgstr "Место отображения"
-
-#: ../share/wbar.glade.h:24
-msgid "Border offset"
-msgstr "Отступ от края"
-
-#: ../share/wbar.glade.h:25
-msgid "No reload bar"
-msgstr "Показывать сверху, без перезагрузки"
-
-#: ../share/wbar.glade.h:26
-msgid "Enable taskbar"
-msgstr "Отображать открытые приложения"
-
-#: ../share/wbar.glade.h:27
-msgid "Inverting icons growth"
-msgstr "Иконки уменьшаются при наведении"
-
-#: ../share/wbar.glade.h:28
-msgid "Reflection percentage"
-msgstr "Размер отражения иконки(0..100)"
-
-#: ../share/wbar.glade.h:29
-#, fuzzy
-msgid "Use launcher icons in taskbar"
-msgstr "establecer el crecimiento de los iconos en la barra:"
-
-#: ../share/wbar.glade.h:30
-#, fuzzy
-msgid "Reflection opacity"
-msgstr "Размер отражения иконки(0..100)"
-
-#: ../share/wbar.glade.h:31
-msgid "Preferences"
-msgstr "Cвойства"
-
-#: ../share/wbar.glade.h:32
-msgid "Icon size"
-msgstr "Размер иконки"
-
-#: ../share/wbar.glade.h:33
-msgid "Jump factor"
-msgstr "Растяжение при наведении"
-
-#: ../share/wbar.glade.h:34
-msgid "Zoom factor"
-msgstr "Увеличение при наведении"
-
-#: ../share/wbar.glade.h:35
-msgid "Number of animated icons"
-msgstr "Сколько иконок реагируют"
-
-#: ../share/wbar.glade.h:36
-msgid "Icon distance"
-msgstr "Расстояние между иконками"
-
-#: ../share/wbar.glade.h:37
-msgid "Filter color"
-msgstr "Цветовой фильтр"
-
-#: ../share/wbar.glade.h:38
-msgid "Color filter mode"
-msgstr "Применять фильтр"
-
-#: ../share/wbar.glade.h:39
-msgid "Bar unfocused alfa level"
-msgstr "Прозрачность неактивной панели"
-
-#: ../share/wbar.glade.h:40
-msgid "Bar alfa level"
-msgstr "Прозрачность активной панели"
-
-#: ../share/wbar.glade.h:41
-msgid "Time for double click [ms]"
-msgstr "Время двойного нажатия [мс]"
-
-#: ../share/wbar.glade.h:42
-msgid "Effects"
-msgstr "Эффекты"
 
 #: ../src/config/Functions.cc:114
 msgid "Icon"
@@ -255,6 +84,14 @@ msgstr "всегда"
 msgid "Configuration empty."
 msgstr "Конфиг пустой."
 
+#: ../src/config/Functions.cc:772
+msgid "New"
+msgstr "Добавить"
+
+#: ../src/config/Functions.cc:808
+msgid "Edit"
+msgstr "Изменить"
+
 #: ../src/config/Functions.cc:839
 msgid "Error save config in "
 msgstr "Ошибка сохрания конфига в "
@@ -266,6 +103,11 @@ msgstr "Поля не должны быть пустые"
 #: ../src/config/Functions.cc:1345
 msgid "Open exec file"
 msgstr "Открыть исполняемый файл"
+
+#: ../src/config/Functions.cc:1346 ../src/config/Functions.cc:1367
+#: ../src/config/Functions.cc:1394 ../src/config/Functions.cc:1422
+msgid "_Cancel"
+msgstr "_Отмена"
 
 #: ../src/config/Functions.cc:1346 ../src/config/Functions.cc:1367
 #: ../src/config/Functions.cc:1394 ../src/config/Functions.cc:1422
@@ -320,11 +162,11 @@ msgstr "Ошибка завершения: "
 msgid " Image not found. Maybe using a relative path?"
 msgstr " Картика не найдена. Возможно указан относительный путь."
 
-#: ../src/core/Bar.cc:678
+#: ../src/core/Bar.cc:677
 msgid "Invalid bar position."
 msgstr "Указано неверное расположение."
 
-#: ../src/core/Bar.cc:679
+#: ../src/core/Bar.cc:678
 msgid "Set default bar position."
 msgstr "Установить положение по-умолчанию."
 
@@ -480,6 +322,125 @@ msgstr "windowIcon() -- XGetWindowProperty"
 #: ../src/utils/Config.cc:38
 msgid "Error copy file: "
 msgstr "Ошибка при копировании файла: "
+
+#~ msgid "_Accept"
+#~ msgstr "_Ок"
+
+#~ msgid "<b>Title</b>"
+#~ msgstr "<b>Заголовок</b>"
+
+#~ msgid "<b>Command</b>"
+#~ msgstr "<b>Команда</b>"
+
+#~ msgid "<b>Icon</b>"
+#~ msgstr "<b>Иконка</b>"
+
+#~ msgid "Settings"
+#~ msgstr "Параметры"
+
+#~ msgid "_About"
+#~ msgstr "_О программе"
+
+#~ msgid "_Close"
+#~ msgstr "_Закрыть"
+
+#~ msgid "_Reload"
+#~ msgstr "_Применить"
+
+#~ msgid "Delete"
+#~ msgstr "Удалить"
+
+#~ msgid "Up"
+#~ msgstr "Поднять"
+
+#~ msgid "Down"
+#~ msgstr "Опустить"
+
+#~ msgid "Icons"
+#~ msgstr "Иконки"
+
+#~ msgid "Size:"
+#~ msgstr "Размер:"
+
+#~ msgid "Font:"
+#~ msgstr "Шрифт:"
+
+#~ msgid "Bar image:"
+#~ msgstr "Фон панельки"
+
+#~ msgid "Icon gets pressed"
+#~ msgstr "Иконка просидает при нажатии"
+
+#~ msgid "Run above the desktop"
+#~ msgstr "Поместить над рабочим столом"
+
+#~ msgid "Vertical bar"
+#~ msgstr "Расположить иконки вертикально"
+
+#~ msgid "Disable font rendering"
+#~ msgstr "Не отображать заголовки иконок"
+
+#~ msgid "Position screen"
+#~ msgstr "Место отображения"
+
+#~ msgid "Border offset"
+#~ msgstr "Отступ от края"
+
+#~ msgid "No reload bar"
+#~ msgstr "Показывать сверху, без перезагрузки"
+
+#~ msgid "Enable taskbar"
+#~ msgstr "Отображать открытые приложения"
+
+#~ msgid "Inverting icons growth"
+#~ msgstr "Иконки уменьшаются при наведении"
+
+#~ msgid "Reflection percentage"
+#~ msgstr "Размер отражения иконки(0..100)"
+
+#, fuzzy
+#~ msgid "Use launcher icons in taskbar"
+#~ msgstr "establecer el crecimiento de los iconos en la barra:"
+
+#, fuzzy
+#~ msgid "Reflection opacity"
+#~ msgstr "Размер отражения иконки(0..100)"
+
+#~ msgid "Preferences"
+#~ msgstr "Cвойства"
+
+#~ msgid "Icon size"
+#~ msgstr "Размер иконки"
+
+#~ msgid "Jump factor"
+#~ msgstr "Растяжение при наведении"
+
+#~ msgid "Zoom factor"
+#~ msgstr "Увеличение при наведении"
+
+#~ msgid "Number of animated icons"
+#~ msgstr "Сколько иконок реагируют"
+
+#~ msgid "Icon distance"
+#~ msgstr "Расстояние между иконками"
+
+#~ msgid "Filter color"
+#~ msgstr "Цветовой фильтр"
+
+#~ msgid "Color filter mode"
+#~ msgstr "Применять фильтр"
+
+#~ msgid "Bar unfocused alfa level"
+#~ msgstr "Прозрачность неактивной панели"
+
+#~ msgid "Bar alfa level"
+#~ msgstr "Прозрачность активной панели"
+
+#~ msgid "Time for double click [ms]"
+#~ msgstr "Время двойного нажатия [мс]"
+
+#~ msgid "Effects"
+#~ msgstr "Эффекты"
 
 #~ msgid "wbar project website"
 #~ msgstr "сайт проекта wbar"

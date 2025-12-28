@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wbar 2.0.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: https://github.com/hmatrjp/wbar/issues\n"
+"POT-Creation-Date: 2025-12-28 19:57+0900\n"
 "PO-Revision-Date: 2012-03-16 18:08+0100\n"
 "Last-Translator: D.M-Wilhelm (Leiche) <meisssw01@gmail.com>\n"
 "Language-Team: Deutsch <yadickson@gmail.com>\n"
@@ -13,177 +14,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: ../share/wbar.glade.h:1 ../src/config/Functions.cc:1346
-#: ../src/config/Functions.cc:1367 ../src/config/Functions.cc:1394
-#: ../src/config/Functions.cc:1422
-msgid "_Cancel"
-msgstr "_Abbrechen"
-
-#: ../share/wbar.glade.h:2
-msgid "_Accept"
-msgstr "_Übernehmen"
-
-#: ../share/wbar.glade.h:3
-msgid "<b>Title</b>"
-msgstr "<b>Titel</b>"
-
-#: ../share/wbar.glade.h:4
-msgid "<b>Command</b>"
-msgstr "<b>Befehl</b>"
-
-#: ../share/wbar.glade.h:5
-msgid "<b>Icon</b>"
-msgstr "<b>Symbol</b>"
-
-#: ../share/wbar.glade.h:6
-msgid "Settings"
-msgstr "Einstellungen"
-
-#: ../share/wbar.glade.h:7
-msgid "_About"
-msgstr "_Über"
-
-#: ../share/wbar.glade.h:8
-msgid "_Close"
-msgstr "_Schließen"
-
-#: ../share/wbar.glade.h:9
-msgid "_Reload"
-msgstr "_Neu laden"
-
-#: ../share/wbar.glade.h:10 ../src/config/Functions.cc:772
-msgid "New"
-msgstr "Neu"
-
-#: ../share/wbar.glade.h:11 ../src/config/Functions.cc:808
-msgid "Edit"
-msgstr "Bearbeiten"
-
-#: ../share/wbar.glade.h:12
-msgid "Delete"
-msgstr "Löschen"
-
-#: ../share/wbar.glade.h:13
-msgid "Up"
-msgstr "Nach oben"
-
-#: ../share/wbar.glade.h:14
-msgid "Down"
-msgstr "Nach unten"
-
-#: ../share/wbar.glade.h:15
-msgid "Icons"
-msgstr "Symbole"
-
-#: ../share/wbar.glade.h:16
-msgid "Size:"
-msgstr "Größe:"
-
-#: ../share/wbar.glade.h:17
-msgid "Font:"
-msgstr "Schrift:"
-
-#: ../share/wbar.glade.h:18
-msgid "Bar image:"
-msgstr "Hintergrundbild:"
-
-#: ../share/wbar.glade.h:19
-msgid "Icon gets pressed"
-msgstr "Symbole werden beim Anklicken gedrückt"
-
-#: ../share/wbar.glade.h:20
-msgid "Run above the desktop"
-msgstr "Wbar oberhalb eines Desktopmanagers"
-
-#: ../share/wbar.glade.h:21
-msgid "Vertical bar"
-msgstr "Vertikale Anordnung"
-
-#: ../share/wbar.glade.h:22
-msgid "Disable font rendering"
-msgstr "Schriftanzeige unterdrücken"
-
-#: ../share/wbar.glade.h:23
-msgid "Position screen"
-msgstr "Position auf dem Bildschirm"
-
-#: ../share/wbar.glade.h:24
-msgid "Border offset"
-msgstr "Border-Offset"
-
-#: ../share/wbar.glade.h:25
-msgid "No reload bar"
-msgstr "Leiste nicht neu starten"
-
-#: ../share/wbar.glade.h:26
-msgid "Enable taskbar"
-msgstr "Taskbar (Fensterliste) aktivieren"
-
-#: ../share/wbar.glade.h:27
-msgid "Inverting icons growth"
-msgstr "Umgekehrte Symbolanimation"
-
-#: ../share/wbar.glade.h:28
-msgid "Reflection percentage"
-msgstr "Symbol (Icon) spiegeln"
-
-#: ../share/wbar.glade.h:29
-msgid "Use launcher icons in taskbar"
-msgstr ""
-
-#: ../share/wbar.glade.h:30
-#, fuzzy
-msgid "Reflection opacity"
-msgstr "Symbol (Icon) spiegeln"
-
-#: ../share/wbar.glade.h:31
-msgid "Preferences"
-msgstr "Einstellungen"
-
-#: ../share/wbar.glade.h:32
-msgid "Icon size"
-msgstr "Symbolgröße"
-
-#: ../share/wbar.glade.h:33
-msgid "Jump factor"
-msgstr "Jump-Faktor"
-
-#: ../share/wbar.glade.h:34
-msgid "Zoom factor"
-msgstr "Zoomfaktor"
-
-#: ../share/wbar.glade.h:35
-msgid "Number of animated icons"
-msgstr "Zahl der animierten Symbole"
-
-#: ../share/wbar.glade.h:36
-msgid "Icon distance"
-msgstr "Symbolabstand"
-
-#: ../share/wbar.glade.h:37
-msgid "Filter color"
-msgstr "Filterfarbe"
-
-#: ../share/wbar.glade.h:38
-msgid "Color filter mode"
-msgstr "Farbfiltermodus"
-
-#: ../share/wbar.glade.h:39
-msgid "Bar unfocused alfa level"
-msgstr "Transparenz der inaktiven Leiste"
-
-#: ../share/wbar.glade.h:40
-msgid "Bar alfa level"
-msgstr "Transparenz der Leiste"
-
-#: ../share/wbar.glade.h:41
-msgid "Time for double click [ms]"
-msgstr "Doppelklickintervall in Millisekunden"
-
-#: ../share/wbar.glade.h:42
-msgid "Effects"
-msgstr "Effekte"
 
 #: ../src/config/Functions.cc:114
 msgid "Icon"
@@ -253,6 +83,14 @@ msgstr "Alle"
 msgid "Configuration empty."
 msgstr "Leere Konfiguration."
 
+#: ../src/config/Functions.cc:772
+msgid "New"
+msgstr "Neu"
+
+#: ../src/config/Functions.cc:808
+msgid "Edit"
+msgstr "Bearbeiten"
+
 #: ../src/config/Functions.cc:839
 msgid "Error save config in "
 msgstr "Fehler gespeichert in"
@@ -264,6 +102,11 @@ msgstr "Felder müssen ausgefüllt sein"
 #: ../src/config/Functions.cc:1345
 msgid "Open exec file"
 msgstr "Öffnen einer ausführbaren Datei"
+
+#: ../src/config/Functions.cc:1346 ../src/config/Functions.cc:1367
+#: ../src/config/Functions.cc:1394 ../src/config/Functions.cc:1422
+msgid "_Cancel"
+msgstr "_Abbrechen"
 
 #: ../src/config/Functions.cc:1346 ../src/config/Functions.cc:1367
 #: ../src/config/Functions.cc:1394 ../src/config/Functions.cc:1422
@@ -318,11 +161,11 @@ msgstr "Fehler beendet Programm: "
 msgid " Image not found. Maybe using a relative path?"
 msgstr "Symbol nicht gefunden. Eventuell in einem anderen Verzeichnis?"
 
-#: ../src/core/Bar.cc:678
+#: ../src/core/Bar.cc:677
 msgid "Invalid bar position."
 msgstr "Ungültige Position der Leiste."
 
-#: ../src/core/Bar.cc:679
+#: ../src/core/Bar.cc:678
 msgid "Set default bar position."
 msgstr "Setze Leiste auf Standard Position."
 
@@ -478,6 +321,121 @@ msgstr ""
 #: ../src/utils/Config.cc:38
 msgid "Error copy file: "
 msgstr "Fehlerprotokoll speichern: "
+
+#~ msgid "_Accept"
+#~ msgstr "_Übernehmen"
+
+#~ msgid "<b>Title</b>"
+#~ msgstr "<b>Titel</b>"
+
+#~ msgid "<b>Command</b>"
+#~ msgstr "<b>Befehl</b>"
+
+#~ msgid "<b>Icon</b>"
+#~ msgstr "<b>Symbol</b>"
+
+#~ msgid "Settings"
+#~ msgstr "Einstellungen"
+
+#~ msgid "_About"
+#~ msgstr "_Über"
+
+#~ msgid "_Close"
+#~ msgstr "_Schließen"
+
+#~ msgid "_Reload"
+#~ msgstr "_Neu laden"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgid "Up"
+#~ msgstr "Nach oben"
+
+#~ msgid "Down"
+#~ msgstr "Nach unten"
+
+#~ msgid "Icons"
+#~ msgstr "Symbole"
+
+#~ msgid "Size:"
+#~ msgstr "Größe:"
+
+#~ msgid "Font:"
+#~ msgstr "Schrift:"
+
+#~ msgid "Bar image:"
+#~ msgstr "Hintergrundbild:"
+
+#~ msgid "Icon gets pressed"
+#~ msgstr "Symbole werden beim Anklicken gedrückt"
+
+#~ msgid "Run above the desktop"
+#~ msgstr "Wbar oberhalb eines Desktopmanagers"
+
+#~ msgid "Vertical bar"
+#~ msgstr "Vertikale Anordnung"
+
+#~ msgid "Disable font rendering"
+#~ msgstr "Schriftanzeige unterdrücken"
+
+#~ msgid "Position screen"
+#~ msgstr "Position auf dem Bildschirm"
+
+#~ msgid "Border offset"
+#~ msgstr "Border-Offset"
+
+#~ msgid "No reload bar"
+#~ msgstr "Leiste nicht neu starten"
+
+#~ msgid "Enable taskbar"
+#~ msgstr "Taskbar (Fensterliste) aktivieren"
+
+#~ msgid "Inverting icons growth"
+#~ msgstr "Umgekehrte Symbolanimation"
+
+#~ msgid "Reflection percentage"
+#~ msgstr "Symbol (Icon) spiegeln"
+
+#, fuzzy
+#~ msgid "Reflection opacity"
+#~ msgstr "Symbol (Icon) spiegeln"
+
+#~ msgid "Preferences"
+#~ msgstr "Einstellungen"
+
+#~ msgid "Icon size"
+#~ msgstr "Symbolgröße"
+
+#~ msgid "Jump factor"
+#~ msgstr "Jump-Faktor"
+
+#~ msgid "Zoom factor"
+#~ msgstr "Zoomfaktor"
+
+#~ msgid "Number of animated icons"
+#~ msgstr "Zahl der animierten Symbole"
+
+#~ msgid "Icon distance"
+#~ msgstr "Symbolabstand"
+
+#~ msgid "Filter color"
+#~ msgstr "Filterfarbe"
+
+#~ msgid "Color filter mode"
+#~ msgstr "Farbfiltermodus"
+
+#~ msgid "Bar unfocused alfa level"
+#~ msgstr "Transparenz der inaktiven Leiste"
+
+#~ msgid "Bar alfa level"
+#~ msgstr "Transparenz der Leiste"
+
+#~ msgid "Time for double click [ms]"
+#~ msgstr "Doppelklickintervall in Millisekunden"
+
+#~ msgid "Effects"
+#~ msgstr "Effekte"
 
 #~ msgid "wbar project website"
 #~ msgstr "WBAR Projektseite"

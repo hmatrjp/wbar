@@ -1,14 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
+# Japanese Message Catalog file for wbar.
 # Copyright (C) 2010 wbar COPYRIGHT HOLDER
 # This file is distributed under the same license as the wbar package.
 # Takeshi Hamasaki <Takeshi.Ken.Hamasaki+hmatrjp@gmail.com>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: wbar 2.4.0\n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-12-21 21:41+0900\n"
+"Project-Id-Version: wbar 2.4.3\n"
+"Report-Msgid-Bugs-To: https://github.com/hmatrjp/wbar/issues\n"
+"POT-Creation-Date: 2025-12-28 19:57+0900\n"
+"PO-Revision-Date: 2025-12-28 17:25+0900\n"
 "Last-Translator: Takeshi Hamasaki <Takeshi.Ken.Hamasaki+hmatrjp@gmail.com>\n"
 "Language-Team: Ja <Takeshi.Ken.Hamasaki+hmatrjp@gmail.com>\n"
 "Language: ja\n"
@@ -16,194 +16,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.6\n"
-
-#: ../share/wbar.glade.h:1 ../src/config/Functions.cc:1346
-#: ../src/config/Functions.cc:1367 ../src/config/Functions.cc:1394
-#: ../src/config/Functions.cc:1422
-msgid "_Cancel"
-msgstr "キャンセル(_C)"
-
-#: ../share/wbar.glade.h:2
-msgid "_Accept"
-msgstr "受け入れる(_A)"
-
-#: ../share/wbar.glade.h:3
-msgid "<b>Title</b>"
-msgstr "<b>タイトル</b>"
-
-#: ../share/wbar.glade.h:4
-msgid "<b>Command</b>"
-msgstr "<b>コマンド</b>"
-
-#: ../share/wbar.glade.h:5
-msgid "<b>Icon</b>"
-msgstr "<b>アイコン</b>"
-
-#: ../share/wbar.glade.h:6
-msgid "Settings"
-msgstr "設定"
-
-#: ../share/wbar.glade.h:7
-msgid "_About"
-msgstr "バージョン情報(_A)"
-
-#: ../share/wbar.glade.h:8
-msgid "_Close"
-msgstr "閉じる(_C)"
-
-#: ../share/wbar.glade.h:9
-msgid "_Reload"
-msgstr "再読込み(_R)"
-
-#: ../share/wbar.glade.h:10 ../src/config/Functions.cc:772
-msgid "New"
-msgstr "新規作成"
-
-#: ../share/wbar.glade.h:11 ../src/config/Functions.cc:808
-msgid "Edit"
-msgstr "編集"
-
-#: ../share/wbar.glade.h:12
-msgid "Delete"
-msgstr "削除"
-
-#: ../share/wbar.glade.h:13
-#, fuzzy
-msgid "Up"
-msgstr "Up"
-
-#: ../share/wbar.glade.h:14
-#, fuzzy
-msgid "Down"
-msgstr "Down"
-
-#: ../share/wbar.glade.h:15
-#, fuzzy
-msgid "Icons"
-msgstr "選択画面 - アイコン表示の一覧"
-
-#: ../share/wbar.glade.h:16
-msgid "Size:"
-msgstr "サイズ:"
-
-#: ../share/wbar.glade.h:17
-msgid "Font:"
-msgstr "フォント:"
-
-#: ../share/wbar.glade.h:18
-msgid "Bar image:"
-msgstr "バーの画像:"
-
-#: ../share/wbar.glade.h:19
-#, fuzzy
-msgid "Icon gets pressed"
-msgstr "アイコンが押された"
-
-#: ../share/wbar.glade.h:20
-#, fuzzy
-msgid "Run above the desktop"
-msgstr "デスクトップ"
-
-#: ../share/wbar.glade.h:21
-msgid "Vertical bar"
-msgstr "垂直バー"
-
-#: ../share/wbar.glade.h:22
-msgid "Disable font rendering"
-msgstr "フォントレンダリングを無効"
-
-#: ../share/wbar.glade.h:23
-#, fuzzy
-msgid "Position screen"
-msgstr "画面"
-
-#: ../share/wbar.glade.h:24
-#, fuzzy
-msgid "Border offset"
-msgstr "_Border(外枠線):"
-
-#: ../share/wbar.glade.h:25
-#, fuzzy
-msgid "No reload bar"
-msgstr "再読込み(_R)..."
-
-#: ../share/wbar.glade.h:26
-msgid "Enable taskbar"
-msgstr "タスクバーを有効"
-
-#: ../share/wbar.glade.h:27
-#, fuzzy
-msgid "Inverting icons growth"
-msgstr "選択画面 - アイコン表示の一覧"
-
-#: ../share/wbar.glade.h:28
-#, fuzzy
-msgid "Reflection percentage"
-msgstr "ファイルシステムの使用率"
-
-#: ../share/wbar.glade.h:29
-#, fuzzy
-msgid "Use launcher icons in taskbar"
-msgstr "選択画面 - アイコン表示の一覧"
-
-#: ../share/wbar.glade.h:30
-#, fuzzy
-msgid "Reflection opacity"
-msgstr "透明度..."
-
-#: ../share/wbar.glade.h:31
-msgid "Preferences"
-msgstr "設定"
-
-#: ../share/wbar.glade.h:32
-msgid "Icon size"
-msgstr "アイコンサイズ"
-
-#: ../share/wbar.glade.h:33
-#, fuzzy
-msgid "Jump factor"
-msgstr "カーソル位置に書かれた場所へジャンプ"
-
-#: ../share/wbar.glade.h:34
-msgid "Zoom factor"
-msgstr "ズーム倍率"
-
-#: ../share/wbar.glade.h:35
-#, fuzzy
-msgid "Number of animated icons"
-msgstr "選択画面 - アイコン表示の一覧"
-
-#: ../share/wbar.glade.h:36
-msgid "Icon distance"
-msgstr "アイコン間の距離"
-
-#: ../share/wbar.glade.h:37
-msgid "Filter color"
-msgstr "フィルター色"
-
-#: ../share/wbar.glade.h:38
-msgid "Color filter mode"
-msgstr "フィルターモード"
-
-#: ../share/wbar.glade.h:39
-#, fuzzy
-msgid "Bar unfocused alfa level"
-msgstr "非フォーカスウィンドウのバー画像"
-
-#: ../share/wbar.glade.h:40
-#, fuzzy
-msgid "Bar alfa level"
-msgstr "ステータスバー(_B)"
-
-#: ../share/wbar.glade.h:41
-#, fuzzy
-msgid "Time for double click [ms]"
-msgstr ""
-" -t, --time <ミリ秒>          ドライバの待機時間をミリ秒単位で指定します\n"
-
-#: ../share/wbar.glade.h:42
-msgid "Effects"
-msgstr "表示効果"
 
 #: ../src/config/Functions.cc:114
 msgid "Icon"
@@ -273,6 +85,14 @@ msgstr "すべて"
 msgid "Configuration empty."
 msgstr "設定が空です。"
 
+#: ../src/config/Functions.cc:772
+msgid "New"
+msgstr "新規作成"
+
+#: ../src/config/Functions.cc:808
+msgid "Edit"
+msgstr "編集"
+
 #: ../src/config/Functions.cc:839
 msgid "Error save config in "
 msgstr "エラー: 設定ファイル保存時 "
@@ -284,6 +104,11 @@ msgstr "フィールドが空ではいけません"
 #: ../src/config/Functions.cc:1345
 msgid "Open exec file"
 msgstr "実行ファイルを開く"
+
+#: ../src/config/Functions.cc:1346 ../src/config/Functions.cc:1367
+#: ../src/config/Functions.cc:1394 ../src/config/Functions.cc:1422
+msgid "_Cancel"
+msgstr "キャンセル(_C)"
 
 #: ../src/config/Functions.cc:1346 ../src/config/Functions.cc:1367
 #: ../src/config/Functions.cc:1394 ../src/config/Functions.cc:1422
@@ -339,11 +164,11 @@ msgstr "プログラムの kill でエラー:"
 msgid " Image not found. Maybe using a relative path?"
 msgstr ""
 
-#: ../src/core/Bar.cc:678
+#: ../src/core/Bar.cc:677
 msgid "Invalid bar position."
 msgstr "無効なバーの位置です。"
 
-#: ../src/core/Bar.cc:679
+#: ../src/core/Bar.cc:678
 msgid "Set default bar position."
 msgstr "バーをデフォルトの位置へ。"
 
@@ -511,6 +336,131 @@ msgstr ""
 #: ../src/utils/Config.cc:38
 msgid "Error copy file: "
 msgstr "ファイルのコピーでエラー: "
+
+#~ msgid "_Accept"
+#~ msgstr "受け入れる(_A)"
+
+#~ msgid "<b>Title</b>"
+#~ msgstr "<b>タイトル</b>"
+
+#~ msgid "<b>Command</b>"
+#~ msgstr "<b>コマンド</b>"
+
+#~ msgid "<b>Icon</b>"
+#~ msgstr "<b>アイコン</b>"
+
+#~ msgid "Settings"
+#~ msgstr "設定"
+
+#~ msgid "_About"
+#~ msgstr "バージョン情報(_A)"
+
+#~ msgid "_Close"
+#~ msgstr "閉じる(_C)"
+
+#~ msgid "_Reload"
+#~ msgstr "保存・再読込み(_R)"
+
+#~ msgid "Delete"
+#~ msgstr "削除"
+
+#~ msgid "Up"
+#~ msgstr "上へ"
+
+#~ msgid "Down"
+#~ msgstr "下へ"
+
+#~ msgid "Icons"
+#~ msgstr "アイコン"
+
+#~ msgid "Size:"
+#~ msgstr "サイズ:"
+
+#~ msgid "Font:"
+#~ msgstr "フォント:"
+
+#~ msgid "Bar image:"
+#~ msgstr "バーの画像:"
+
+#~ msgid "Icon gets pressed"
+#~ msgstr "押せるアイコン"
+
+#~ msgid "Run above the desktop"
+#~ msgstr "デスクトップより手前に表示"
+
+#~ msgid "Vertical bar"
+#~ msgstr "垂直バー"
+
+#~ msgid "Disable font rendering"
+#~ msgstr "フォントレンダリングを無効"
+
+#, fuzzy
+#~ msgid "Position screen"
+#~ msgstr "画面"
+
+#~ msgid "Border offset"
+#~ msgstr "画面端からの距離"
+
+#, fuzzy
+#~ msgid "No reload bar"
+#~ msgstr "再読込み(_R)..."
+
+#~ msgid "Enable taskbar"
+#~ msgstr "タスクバーを有効"
+
+#, fuzzy
+#~ msgid "Inverting icons growth"
+#~ msgstr "選択画面 - アイコン表示の一覧"
+
+#~ msgid "Reflection percentage"
+#~ msgstr "アイコンの反射像を追加（パーセンテージ）"
+
+#, fuzzy
+#~ msgid "Use launcher icons in taskbar"
+#~ msgstr "選択画面 - アイコン表示の一覧"
+
+#, fuzzy
+#~ msgid "Reflection opacity"
+#~ msgstr "透明度..."
+
+#~ msgid "Preferences"
+#~ msgstr "設定"
+
+#~ msgid "Icon size"
+#~ msgstr "アイコンサイズ"
+
+#, fuzzy
+#~ msgid "Jump factor"
+#~ msgstr "カーソル位置に書かれた場所へジャンプ"
+
+#~ msgid "Zoom factor"
+#~ msgstr "ズーム倍率"
+
+#~ msgid "Number of animated icons"
+#~ msgstr "アニメーションに巻き込むアイコンの数"
+
+#~ msgid "Icon distance"
+#~ msgstr "アイコン間の距離"
+
+#~ msgid "Filter color"
+#~ msgstr "フィルター色"
+
+#~ msgid "Color filter mode"
+#~ msgstr "フィルターモード"
+
+#~ msgid "Bar unfocused alfa level"
+#~ msgstr "非フォーカス時のバーのアルファレベル"
+
+#~ msgid "Bar alfa level"
+#~ msgstr "バーのアルファレベル"
+
+#, fuzzy
+#~ msgid "Time for double click [ms]"
+#~ msgstr ""
+#~ " -t, --time <ミリ秒>          ドライバの待機時間をミリ秒単位で指定します\n"
+
+#~ msgid "Effects"
+#~ msgstr "表示効果"
 
 #~ msgid "wbar project website"
 #~ msgstr "wbar の ウェブサイト"

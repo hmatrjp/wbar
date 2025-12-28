@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wbar es\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: https://github.com/hmatrjp/wbar/issues\n"
+"POT-Creation-Date: 2025-12-28 19:57+0900\n"
 "PO-Revision-Date: 2011-05-06 11:38-0400\n"
 "Last-Translator: Yadickson Soto <yadickson@gmail.com>\n"
 "Language-Team: ES <yadickson@gmail.com>\n"
@@ -14,178 +15,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: ../share/wbar.glade.h:1 ../src/config/Functions.cc:1346
-#: ../src/config/Functions.cc:1367 ../src/config/Functions.cc:1394
-#: ../src/config/Functions.cc:1422
-msgid "_Cancel"
-msgstr "_Cancelar"
-
-#: ../share/wbar.glade.h:2
-msgid "_Accept"
-msgstr "_Aceptar"
-
-#: ../share/wbar.glade.h:3
-msgid "<b>Title</b>"
-msgstr "<b>Título</b>"
-
-#: ../share/wbar.glade.h:4
-msgid "<b>Command</b>"
-msgstr "<b>Comando</b>"
-
-#: ../share/wbar.glade.h:5
-msgid "<b>Icon</b>"
-msgstr "<b>Icono</b>"
-
-#: ../share/wbar.glade.h:6
-msgid "Settings"
-msgstr "Configuración"
-
-#: ../share/wbar.glade.h:7
-msgid "_About"
-msgstr "_Acerca de"
-
-#: ../share/wbar.glade.h:8
-msgid "_Close"
-msgstr "_Cerrar"
-
-#: ../share/wbar.glade.h:9
-msgid "_Reload"
-msgstr "_Recargar"
-
-#: ../share/wbar.glade.h:10 ../src/config/Functions.cc:772
-msgid "New"
-msgstr "Nuevo"
-
-#: ../share/wbar.glade.h:11 ../src/config/Functions.cc:808
-msgid "Edit"
-msgstr "Editar"
-
-#: ../share/wbar.glade.h:12
-msgid "Delete"
-msgstr "Borrar"
-
-#: ../share/wbar.glade.h:13
-msgid "Up"
-msgstr "Arriba"
-
-#: ../share/wbar.glade.h:14
-msgid "Down"
-msgstr "Abajo"
-
-#: ../share/wbar.glade.h:15
-msgid "Icons"
-msgstr "Iconos"
-
-#: ../share/wbar.glade.h:16
-msgid "Size:"
-msgstr "Tamaño:"
-
-#: ../share/wbar.glade.h:17
-msgid "Font:"
-msgstr "Fuente:"
-
-#: ../share/wbar.glade.h:18
-msgid "Bar image:"
-msgstr "Imagen de barra"
-
-#: ../share/wbar.glade.h:19
-msgid "Icon gets pressed"
-msgstr "Icono se presiona"
-
-#: ../share/wbar.glade.h:20
-msgid "Run above the desktop"
-msgstr "Ejecutar sobre el escritorio"
-
-#: ../share/wbar.glade.h:21
-msgid "Vertical bar"
-msgstr "Barra vertical"
-
-#: ../share/wbar.glade.h:22
-msgid "Disable font rendering"
-msgstr "Deshabilitar texto"
-
-#: ../share/wbar.glade.h:23
-msgid "Position screen"
-msgstr "Posición en pantalla"
-
-#: ../share/wbar.glade.h:24
-msgid "Border offset"
-msgstr "Separación del borde"
-
-#: ../share/wbar.glade.h:25
-msgid "No reload bar"
-msgstr "No recarga la barra"
-
-#: ../share/wbar.glade.h:26
-msgid "Enable taskbar"
-msgstr "Habilitar la barra de tarea"
-
-#: ../share/wbar.glade.h:27
-msgid "Inverting icons growth"
-msgstr "Invertir crecimineto de iconos"
-
-#: ../share/wbar.glade.h:28
-msgid "Reflection percentage"
-msgstr "Porcentaje de reflexión"
-
-#: ../share/wbar.glade.h:29
-#, fuzzy
-msgid "Use launcher icons in taskbar"
-msgstr "establecer el crecimiento de los iconos en la barra:"
-
-#: ../share/wbar.glade.h:30
-#, fuzzy
-msgid "Reflection opacity"
-msgstr "Porcentaje de reflexión"
-
-#: ../share/wbar.glade.h:31
-msgid "Preferences"
-msgstr "Preferencias"
-
-#: ../share/wbar.glade.h:32
-msgid "Icon size"
-msgstr "Tamaño de icono"
-
-#: ../share/wbar.glade.h:33
-msgid "Jump factor"
-msgstr "Factor de salto"
-
-#: ../share/wbar.glade.h:34
-msgid "Zoom factor"
-msgstr "Factor de zoom"
-
-#: ../share/wbar.glade.h:35
-msgid "Number of animated icons"
-msgstr "Numero de iconos animados"
-
-#: ../share/wbar.glade.h:36
-msgid "Icon distance"
-msgstr "Distancia entre iconos"
-
-#: ../share/wbar.glade.h:37
-msgid "Filter color"
-msgstr "Filtro de color"
-
-#: ../share/wbar.glade.h:38
-msgid "Color filter mode"
-msgstr "Modo de filtro de color"
-
-#: ../share/wbar.glade.h:39
-msgid "Bar unfocused alfa level"
-msgstr "Nivel de desenfoque de la barra"
-
-#: ../share/wbar.glade.h:40
-msgid "Bar alfa level"
-msgstr "Nivel alfa de la barra"
-
-#: ../share/wbar.glade.h:41
-msgid "Time for double click [ms]"
-msgstr "Tiempo para doble click [ms]"
-
-#: ../share/wbar.glade.h:42
-msgid "Effects"
-msgstr "Efectos"
 
 #: ../src/config/Functions.cc:114
 msgid "Icon"
@@ -255,6 +84,14 @@ msgstr "todos"
 msgid "Configuration empty."
 msgstr "Configuración vacía."
 
+#: ../src/config/Functions.cc:772
+msgid "New"
+msgstr "Nuevo"
+
+#: ../src/config/Functions.cc:808
+msgid "Edit"
+msgstr "Editar"
+
 #: ../src/config/Functions.cc:839
 msgid "Error save config in "
 msgstr "Error al guardar la configuración en "
@@ -266,6 +103,11 @@ msgstr "Los campos no deben estar vacíos"
 #: ../src/config/Functions.cc:1345
 msgid "Open exec file"
 msgstr "Abrir archivo ejecutable"
+
+#: ../src/config/Functions.cc:1346 ../src/config/Functions.cc:1367
+#: ../src/config/Functions.cc:1394 ../src/config/Functions.cc:1422
+msgid "_Cancel"
+msgstr "_Cancelar"
 
 #: ../src/config/Functions.cc:1346 ../src/config/Functions.cc:1367
 #: ../src/config/Functions.cc:1394 ../src/config/Functions.cc:1422
@@ -320,11 +162,11 @@ msgstr "Error terminando programa: "
 msgid " Image not found. Maybe using a relative path?"
 msgstr " Imagen no encontrada. ¿Tal vez estas utilizando una ruta relativa?"
 
-#: ../src/core/Bar.cc:678
+#: ../src/core/Bar.cc:677
 msgid "Invalid bar position."
 msgstr "Posición de la barra no valida."
 
-#: ../src/core/Bar.cc:679
+#: ../src/core/Bar.cc:678
 msgid "Set default bar position."
 msgstr "Establecer posición de la barra por defecto."
 
@@ -480,6 +322,125 @@ msgstr "windowIcon() -- XGetWindowProperty"
 #: ../src/utils/Config.cc:38
 msgid "Error copy file: "
 msgstr "Error copiando archivo: "
+
+#~ msgid "_Accept"
+#~ msgstr "_Aceptar"
+
+#~ msgid "<b>Title</b>"
+#~ msgstr "<b>Título</b>"
+
+#~ msgid "<b>Command</b>"
+#~ msgstr "<b>Comando</b>"
+
+#~ msgid "<b>Icon</b>"
+#~ msgstr "<b>Icono</b>"
+
+#~ msgid "Settings"
+#~ msgstr "Configuración"
+
+#~ msgid "_About"
+#~ msgstr "_Acerca de"
+
+#~ msgid "_Close"
+#~ msgstr "_Cerrar"
+
+#~ msgid "_Reload"
+#~ msgstr "_Recargar"
+
+#~ msgid "Delete"
+#~ msgstr "Borrar"
+
+#~ msgid "Up"
+#~ msgstr "Arriba"
+
+#~ msgid "Down"
+#~ msgstr "Abajo"
+
+#~ msgid "Icons"
+#~ msgstr "Iconos"
+
+#~ msgid "Size:"
+#~ msgstr "Tamaño:"
+
+#~ msgid "Font:"
+#~ msgstr "Fuente:"
+
+#~ msgid "Bar image:"
+#~ msgstr "Imagen de barra"
+
+#~ msgid "Icon gets pressed"
+#~ msgstr "Icono se presiona"
+
+#~ msgid "Run above the desktop"
+#~ msgstr "Ejecutar sobre el escritorio"
+
+#~ msgid "Vertical bar"
+#~ msgstr "Barra vertical"
+
+#~ msgid "Disable font rendering"
+#~ msgstr "Deshabilitar texto"
+
+#~ msgid "Position screen"
+#~ msgstr "Posición en pantalla"
+
+#~ msgid "Border offset"
+#~ msgstr "Separación del borde"
+
+#~ msgid "No reload bar"
+#~ msgstr "No recarga la barra"
+
+#~ msgid "Enable taskbar"
+#~ msgstr "Habilitar la barra de tarea"
+
+#~ msgid "Inverting icons growth"
+#~ msgstr "Invertir crecimineto de iconos"
+
+#~ msgid "Reflection percentage"
+#~ msgstr "Porcentaje de reflexión"
+
+#, fuzzy
+#~ msgid "Use launcher icons in taskbar"
+#~ msgstr "establecer el crecimiento de los iconos en la barra:"
+
+#, fuzzy
+#~ msgid "Reflection opacity"
+#~ msgstr "Porcentaje de reflexión"
+
+#~ msgid "Preferences"
+#~ msgstr "Preferencias"
+
+#~ msgid "Icon size"
+#~ msgstr "Tamaño de icono"
+
+#~ msgid "Jump factor"
+#~ msgstr "Factor de salto"
+
+#~ msgid "Zoom factor"
+#~ msgstr "Factor de zoom"
+
+#~ msgid "Number of animated icons"
+#~ msgstr "Numero de iconos animados"
+
+#~ msgid "Icon distance"
+#~ msgstr "Distancia entre iconos"
+
+#~ msgid "Filter color"
+#~ msgstr "Filtro de color"
+
+#~ msgid "Color filter mode"
+#~ msgstr "Modo de filtro de color"
+
+#~ msgid "Bar unfocused alfa level"
+#~ msgstr "Nivel de desenfoque de la barra"
+
+#~ msgid "Bar alfa level"
+#~ msgstr "Nivel alfa de la barra"
+
+#~ msgid "Time for double click [ms]"
+#~ msgstr "Tiempo para doble click [ms]"
+
+#~ msgid "Effects"
+#~ msgstr "Efectos"
 
 #~ msgid "wbar project website"
 #~ msgstr "sitio web del proyecto wbar"

@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wbar 2.0.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: https://github.com/hmatrjp/wbar/issues\n"
+"POT-Creation-Date: 2025-12-28 19:57+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Yadickson Soto <yadickson@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,176 +15,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 "Generated-By: pygettext.py 1.5\n"
-
-#: ../share/wbar.glade.h:1 ../src/config/Functions.cc:1346
-#: ../src/config/Functions.cc:1367 ../src/config/Functions.cc:1394
-#: ../src/config/Functions.cc:1422
-msgid "_Cancel"
-msgstr ""
-
-#: ../share/wbar.glade.h:2
-msgid "_Accept"
-msgstr ""
-
-#: ../share/wbar.glade.h:3
-msgid "<b>Title</b>"
-msgstr ""
-
-#: ../share/wbar.glade.h:4
-msgid "<b>Command</b>"
-msgstr ""
-
-#: ../share/wbar.glade.h:5
-msgid "<b>Icon</b>"
-msgstr ""
-
-#: ../share/wbar.glade.h:6
-msgid "Settings"
-msgstr "Asetukset"
-
-#: ../share/wbar.glade.h:7
-msgid "_About"
-msgstr "_Tietoa"
-
-#: ../share/wbar.glade.h:8
-msgid "_Close"
-msgstr ""
-
-#: ../share/wbar.glade.h:9
-msgid "_Reload"
-msgstr ""
-
-#: ../share/wbar.glade.h:10 ../src/config/Functions.cc:772
-msgid "New"
-msgstr ""
-
-#: ../share/wbar.glade.h:11 ../src/config/Functions.cc:808
-msgid "Edit"
-msgstr ""
-
-#: ../share/wbar.glade.h:12
-msgid "Delete"
-msgstr ""
-
-#: ../share/wbar.glade.h:13
-msgid "Up"
-msgstr "Ylös"
-
-#: ../share/wbar.glade.h:14
-msgid "Down"
-msgstr "Alas"
-
-#: ../share/wbar.glade.h:15
-msgid "Icons"
-msgstr "Kuvakes"
-
-#: ../share/wbar.glade.h:16
-msgid "Size:"
-msgstr ""
-
-#: ../share/wbar.glade.h:17
-msgid "Font:"
-msgstr "Fontti:"
-
-#: ../share/wbar.glade.h:18
-msgid "Bar image:"
-msgstr ""
-
-#: ../share/wbar.glade.h:19
-msgid "Icon gets pressed"
-msgstr "Kuvake tulee painetuksi"
-
-#: ../share/wbar.glade.h:20
-msgid "Run above the desktop"
-msgstr "Suorita työpöytäsovellusten yllä"
-
-#: ../share/wbar.glade.h:21
-msgid "Vertical bar"
-msgstr "Pystypalkki"
-
-#: ../share/wbar.glade.h:22
-msgid "Disable font rendering"
-msgstr "Tekstin esitys pois päältä"
-
-#: ../share/wbar.glade.h:23
-msgid "Position screen"
-msgstr "Sijainti näytöllä"
-
-#: ../share/wbar.glade.h:24
-msgid "Border offset"
-msgstr ""
-
-#: ../share/wbar.glade.h:25
-msgid "No reload bar"
-msgstr ""
-
-#: ../share/wbar.glade.h:26
-msgid "Enable taskbar"
-msgstr ""
-
-#: ../share/wbar.glade.h:27
-msgid "Inverting icons growth"
-msgstr ""
-
-#: ../share/wbar.glade.h:28
-msgid "Reflection percentage"
-msgstr ""
-
-#: ../share/wbar.glade.h:29
-msgid "Use launcher icons in taskbar"
-msgstr ""
-
-#: ../share/wbar.glade.h:30
-msgid "Reflection opacity"
-msgstr ""
-
-#: ../share/wbar.glade.h:31
-msgid "Preferences"
-msgstr ""
-
-#: ../share/wbar.glade.h:32
-msgid "Icon size"
-msgstr "Kuvakkeen koko"
-
-#: ../share/wbar.glade.h:33
-msgid "Jump factor"
-msgstr "Hyppykerroin"
-
-#: ../share/wbar.glade.h:34
-msgid "Zoom factor"
-msgstr "Suurennuskerroin"
-
-#: ../share/wbar.glade.h:35
-msgid "Number of animated icons"
-msgstr "Animoitavien kuvakkeiden lukumäärä"
-
-#: ../share/wbar.glade.h:36
-msgid "Icon distance"
-msgstr "Kuvakkeiden etäisyys"
-
-#: ../share/wbar.glade.h:37
-msgid "Filter color"
-msgstr "Suodatusväri"
-
-#: ../share/wbar.glade.h:38
-msgid "Color filter mode"
-msgstr "Värin suodatustila"
-
-#: ../share/wbar.glade.h:39
-msgid "Bar unfocused alfa level"
-msgstr "Valitsemattoman palkin läpinäkyvyys %"
-
-#: ../share/wbar.glade.h:40
-msgid "Bar alfa level"
-msgstr "Palkin läpinäkyvyys %"
-
-#: ../share/wbar.glade.h:41
-msgid "Time for double click [ms]"
-msgstr "Tuplaklikkausviive millisekunteina"
-
-#: ../share/wbar.glade.h:42
-msgid "Effects"
-msgstr ""
 
 #: ../src/config/Functions.cc:114
 msgid "Icon"
@@ -253,6 +84,14 @@ msgstr "kaikki"
 msgid "Configuration empty."
 msgstr ""
 
+#: ../src/config/Functions.cc:772
+msgid "New"
+msgstr ""
+
+#: ../src/config/Functions.cc:808
+msgid "Edit"
+msgstr ""
+
 #: ../src/config/Functions.cc:839
 msgid "Error save config in "
 msgstr ""
@@ -263,6 +102,11 @@ msgstr ""
 
 #: ../src/config/Functions.cc:1345
 msgid "Open exec file"
+msgstr ""
+
+#: ../src/config/Functions.cc:1346 ../src/config/Functions.cc:1367
+#: ../src/config/Functions.cc:1394 ../src/config/Functions.cc:1422
+msgid "_Cancel"
 msgstr ""
 
 #: ../src/config/Functions.cc:1346 ../src/config/Functions.cc:1367
@@ -318,11 +162,11 @@ msgstr ""
 msgid " Image not found. Maybe using a relative path?"
 msgstr ""
 
-#: ../src/core/Bar.cc:678
+#: ../src/core/Bar.cc:677
 msgid "Invalid bar position."
 msgstr ""
 
-#: ../src/core/Bar.cc:679
+#: ../src/core/Bar.cc:678
 msgid "Set default bar position."
 msgstr ""
 
@@ -479,6 +323,69 @@ msgstr ""
 #: ../src/utils/Config.cc:38
 msgid "Error copy file: "
 msgstr ""
+
+#~ msgid "Settings"
+#~ msgstr "Asetukset"
+
+#~ msgid "_About"
+#~ msgstr "_Tietoa"
+
+#~ msgid "Up"
+#~ msgstr "Ylös"
+
+#~ msgid "Down"
+#~ msgstr "Alas"
+
+#~ msgid "Icons"
+#~ msgstr "Kuvakes"
+
+#~ msgid "Font:"
+#~ msgstr "Fontti:"
+
+#~ msgid "Icon gets pressed"
+#~ msgstr "Kuvake tulee painetuksi"
+
+#~ msgid "Run above the desktop"
+#~ msgstr "Suorita työpöytäsovellusten yllä"
+
+#~ msgid "Vertical bar"
+#~ msgstr "Pystypalkki"
+
+#~ msgid "Disable font rendering"
+#~ msgstr "Tekstin esitys pois päältä"
+
+#~ msgid "Position screen"
+#~ msgstr "Sijainti näytöllä"
+
+#~ msgid "Icon size"
+#~ msgstr "Kuvakkeen koko"
+
+#~ msgid "Jump factor"
+#~ msgstr "Hyppykerroin"
+
+#~ msgid "Zoom factor"
+#~ msgstr "Suurennuskerroin"
+
+#~ msgid "Number of animated icons"
+#~ msgstr "Animoitavien kuvakkeiden lukumäärä"
+
+#~ msgid "Icon distance"
+#~ msgstr "Kuvakkeiden etäisyys"
+
+#~ msgid "Filter color"
+#~ msgstr "Suodatusväri"
+
+#~ msgid "Color filter mode"
+#~ msgstr "Värin suodatustila"
+
+#~ msgid "Bar unfocused alfa level"
+#~ msgstr "Valitsemattoman palkin läpinäkyvyys %"
+
+#~ msgid "Bar alfa level"
+#~ msgstr "Palkin läpinäkyvyys %"
+
+#~ msgid "Time for double click [ms]"
+#~ msgstr "Tuplaklikkausviive millisekunteina"
 
 #~ msgid "Icon name:"
 #~ msgstr "Kuvake:"
