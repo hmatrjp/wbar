@@ -1,4 +1,4 @@
-share/wbar.glade
+share/wbar.ui
 src/config/Functions.cc
 src/config/Functions.h
 src/config/MainConfig.cc

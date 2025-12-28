@@ -77,7 +77,7 @@ enum {
 void view_settings() {
   xml = gtk_builder_new ();
   GError * error = nullptr;
-  gtk_builder_add_from_file (xml, GLADE_PACKAGE_NAME, &error);
+  gtk_builder_add_from_file (xml, UIXML_NAME, &error);
 
   set_default_icon();
 

@@ -1,8 +1,8 @@
 CLEANFILES = *~
 
-gladedir = @GLADE_PACKAGE_DIR@
-glade_DATA = @PACKAGE@.glade
+uixmldir = @UIXML_DIR@
+uixml_DATA = @PACKAGE@.ui
 
 EXTRA_DIST = \
-$(glade_DATA)
+$(uixml_DATA)
 

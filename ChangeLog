@@ -1,3 +1,17 @@
+wbar (2.4.2)
+
+  * (I have forgot increment version number at the releae, again) 
+  * Remove dependency to gladeui-2.0-dev from configure.ac
+
+ -- Takeshi Hamasaki <Takeshi.Ken.Hamasaki+hmatrjp@gmail.com> (22-12-2025)
+
+wbar (2.4.1)
+
+  * (I have forgot increment version number at the releae) 
+  * Cleanup for newer autotools build system
+
+ -- Takeshi Hamasaki <Takeshi.Ken.Hamasaki+hmatrjp@gmail.com> (21-12-2025)
+
 wbar (2.4.0)
 
   * I adopt derived version of wbar by Ivan Fitenko, at:

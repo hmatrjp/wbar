@@ -1,6 +1,6 @@
 dnl make yadickson soto
 
-AC_INIT([wbar],[2.4.0])
+AC_INIT([wbar],[2.4.2])
 AM_INIT_AUTOMAKE([ filename-length-max=256 tar-ustar subdir-objects ])
 
 AC_CONFIG_HEADERS(config.h)
@@ -47,11 +47,11 @@ AC_DEFINE_UNQUOTED(AUTOSTARTDIR, "$AUTOSTARTDIR" , [ The autostart dir ])
 AC_SUBST(PIXMAPDIR, "$SHARE_DATADIR/pixmaps")
 AC_DEFINE_UNQUOTED(PIXMAPDIR, "$PIXMAPDIR" , [ The pixmaps dir ])
 
-AC_SUBST(GLADE_PACKAGE_DIR, "$SHARE_DATADIR/AC_PACKAGE_NAME/glade")
-AC_DEFINE_UNQUOTED(GLADE_PACKAGE_DIR, "$GLADE_PACKAGE_DIR" , [ The glade package dir ])
+AC_SUBST(UIXML_DIR, "$SHARE_DATADIR/AC_PACKAGE_NAME")
+AC_DEFINE_UNQUOTED(UIXML_DIR, "$UIXML_DIR" , [ The UI XML dir ])
 
-AC_SUBST(GLADE_PACKAGE_NAME, "$GLADE_PACKAGE_DIR/AC_PACKAGE_NAME.ui")
-AC_DEFINE_UNQUOTED(GLADE_PACKAGE_NAME, "$GLADE_PACKAGE_NAME" , [ The glade package name ])
+AC_SUBST(UIXML_NAME, "$UIXML_DIR/AC_PACKAGE_NAME.ui")
+AC_DEFINE_UNQUOTED(UIXML_NAME, "$UIXML_NAME" , [ The GtkBuilder UI filename ])
 
 AC_SUBST(DEFAULT_ARGV, "--bpress --above-desk --vbar --pos right --isize 64 --idist 5 --nanim 4 --falfa 65")
 AC_DEFINE_UNQUOTED(DEFAULT_ARGV, "$DEFAULT_ARGV" , [ The default argv ])
