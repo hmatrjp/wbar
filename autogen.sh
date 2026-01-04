@@ -13,8 +13,8 @@ DIE=0
 }
 
 mkdir -p m4
-autoreconf --install
-autoreconf --force
+autoreconf --install --force
+# autoreconf --force
 
 (autoconf --version) < /dev/null > /dev/null 2>&1 || {
   echo
