@@ -1,3 +1,16 @@
+wbar (2.4.3)
+
+  * Eliminate symbol names for gladeui
+  * Options are specified at once for call of autoreconf in autogen.sh 
+    to avoid error
+  * Update translations:
+    - po/*.po along to modification of source code
+    - Introduce po/Makevars
+  * Changed exception handling in src/core/Icon.cc to avoid unwanted output 
+    to stdout at startup in case icon image file is not found
+
+ -- Takeshi Hamasaki <Takeshi.Ken.Hamasaki+hmatrjp@gmail.com> (04-01-2026)
+
 wbar (2.4.2)
 
   * (I have forgot increment version number at the releae, again) 
