@@ -1,6 +1,7 @@
 #include "Icon.h"
 #include "i18n.h"
 #include <string.h>
+#include <iostream>
 
 using namespace std;
 
@@ -19,10 +20,13 @@ Icon::Icon(string iconImg, string cmd, int xx, int yy, unsigned long winid,
     icon = imlib_create_image(iw, ih + ih*refl_perc/100);
     imlib_context_set_image(icon);
     imlib_image_set_has_alpha(1);
-  } else if (!(icon = LOAD_IMAGE(iconImg.c_str()))) {
-    throw(iconImg + _(" Couldn't load icon image.")).c_str();
+  } else {
+  	icon = LOAD_IMAGE(iconImg.c_str());
+  	if (!icon) {
+      cerr << iconImg + ":" <<  _(" Couldn't load icon image.") << endl;
+      return;
+  	}
   }
-
   USE_IMAGE(icon);
 
   if (iconImg == "") {

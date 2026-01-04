@@ -673,7 +673,7 @@ int mapIcons() {
       iconpos++;
     }
     catch (const char * m) {
-      std::cout << m << std::endl;
+      std::cout << "inside" __FILE__<<":"<< __LINE__ << " catch: " << m << std::endl;
     }
 
   }
